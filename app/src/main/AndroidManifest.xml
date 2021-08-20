@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/docyqa"
         android:supportsRtl="true"
         android:theme="@style/Theme.DocyQA">
+        <activity android:name=".question_answer"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
