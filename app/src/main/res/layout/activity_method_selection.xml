@@ -10,9 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".question_answer"
+        tools:context=".MethodSelection"
         android:background="@color/colorPrimary">
-
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/title"
             android:layout_width="0dp"
@@ -56,7 +55,7 @@
             android:paddingBottom="10dp"
             android:layout_marginBottom="40dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/ask"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -64,72 +63,54 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="30dp"
-                android:hint="Hello, Ask me a Question?"
-                android:textColorHint="@color/colorPrimary"
-                app:hintTextColor="@color/colorPrimaryDark"
+                android:text="Select Approach"
                 android:background="@color/white"
-                android:paddingTop="5dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/question"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorPrimary"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:fontFamily="@font/alumnisans"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:inputType="textEmailAddress"
-                    android:textCursorDrawable="@null"
-                    android:background="@color/white"
-                    android:textSize="25dp" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/alumnisans"
+                android:singleLine="true"
+                android:gravity="center"
+                android:padding="10dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/answer_btn"
-                android:layout_width="150dp"
+                android:id="@+id/Naive_Approach"
+                android:layout_width="0dp"
                 android:layout_height="60dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ask"
-                android:text="Find Answer"
+                android:text="Naive Approach"
                 android:textColor="@color/text_color"
                 android:layout_marginTop="25dp"
-                app:backgroundTint="@color/colorPrimaryDark" />
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="textCapSentences" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/answer_txt"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Word2vec_Approach"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="60dp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/answer_btn"
                 app:layout_constraintRight_toRightOf="parent"
-                android:background="@color/colorPrimary"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="15dp"
-                android:scrollbars="vertical"
-                android:text="Answer"
-                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/Naive_Approach"
+                android:text="Word2Vec Approach"
                 android:textColor="@color/text_color"
-                android:textSize="20dp"
-                app:fontFamily="sans-serif-condensed-medium" />
+                android:layout_marginTop="15dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="textCapSentences" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/answer"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/glove_Approach"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="60dp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/answer_txt"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:background="@color/white"
-                android:layout_marginBottom="15dp"
-                android:scrollbars="vertical"
-                android:textSize="18dp"
-                android:textColor="@color/light_black"
-                android:text="Processing..."
-                android:padding="10dp"
-                android:justificationMode="inter_word"/>
+                app:layout_constraintTop_toBottomOf="@id/Word2vec_Approach"
+                android:text="Glove Approach"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="15dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="textCapSentences" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -141,30 +122,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/bottom"
             android:alpha="1.0">
-
-            <!--<ImageView
-                android:layout_width="200dp"
-                android:layout_height="250dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/pdf" />-->
-
-<!--            <com.agrawalsuneet.loaderspack.loaders.SearchLoader-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                app:layout_constraintRight_toRightOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:search_defaultStartLoading="true"-->
-<!--                app:search_lensColor="@color/colorAccent"-->
-<!--                android:layout_margin="10dp"-->
-<!--                app:search_lensHandleLength="20dp"-->
-<!--                app:search_lensRadius="14dp"-->
-<!--                app:search_xRangeToSearch="120dp"-->
-<!--                app:search_yRangeToSearch="120dp" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView

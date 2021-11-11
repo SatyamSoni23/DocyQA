@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void next_step(){
-        Intent intent = new Intent(this, question_answer.class);
+        Intent intent = new Intent(this, MethodSelection.class);
         startActivity(intent);
     }
 }
