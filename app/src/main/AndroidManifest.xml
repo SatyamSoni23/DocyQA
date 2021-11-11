@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/docyqa"
         android:supportsRtl="true"
         android:theme="@style/Theme.DocyQA"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:allowClearUserData="true">
         <activity
             android:name=".MethodSelection"
             android:exported="false" />
