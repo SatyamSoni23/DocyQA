@@ -111,6 +111,18 @@
                 app:backgroundTint="@color/colorPrimaryDark"
                 android:inputType="textCapSentences" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bert"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/glove_Approach"
+                android:text="Bert Approach"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="15dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="textCapSentences" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
