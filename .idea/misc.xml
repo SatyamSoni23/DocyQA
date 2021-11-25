@@ -8,9 +8,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/Under Progress/DocyQA/app/src/main/res/drawable-v24/home.xml" value="0.25462962962962965" />
         <entry key="..\:/Android Studio/Under Progress/DocyQA/app/src/main/res/layout/activity_main.xml" value="0.21203703703703702" />
         <entry key="..\:/Android Studio/Under Progress/DocyQA/app/src/main/res/layout/activity_method_selection.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Studio/Under Progress/DocyQA/app/src/main/res/layout/activity_question_answer.xml" value="0.21203703703703702" />
+        <entry key="..\:/Android Studio/Under Progress/DocyQA/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

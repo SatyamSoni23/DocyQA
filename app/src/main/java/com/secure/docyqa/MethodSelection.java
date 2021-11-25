@@ -1,6 +1,7 @@
 package com.secure.docyqa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
@@ -18,6 +19,8 @@ public class MethodSelection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_method_selection);
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         binding.NaiveApproach.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +42,13 @@ public class MethodSelection extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 APPROACH = "3";
+                start_next_activity();
+            }
+        });
+        binding.bert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                APPROACH = "4";
                 start_next_activity();
             }
         });

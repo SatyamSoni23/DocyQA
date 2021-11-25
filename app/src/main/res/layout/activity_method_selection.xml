@@ -35,7 +35,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title"
             android:gravity="center_horizontal"
-            android:text="Powered by Innogenix"
+            android:text="Natural Language Processing"
             android:textColor="@color/text_color"
             app:fontFamily="@font/alumnisans"
             android:textSize="15sp"
