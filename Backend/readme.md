@@ -6,7 +6,7 @@ The backend uses a flask server for Question-Answering System for getting reques
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following Libraries.
 
-### For methods Naive and Word Embedding Technique
+### For Naive and Word Embedding Technique
 ```bash
 !pip install pdfplumber
 !pip install nltk
@@ -16,12 +16,12 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install followi
 !pip install numpy
 ```
 
-### For Simple Transformer
+### Simple Transformer
 ```bash
 !pip install simpletransformers
 ```
 
-### For Bert
+### Bert
 ```bash
 !pip install transformers==3.1.0
 ```
@@ -33,3 +33,23 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install followi
 !pip install flask-ngrok
 !pip install werkzeug
 ```
+
+## Approches:
+- Simple Split and Cosine Similarity (Naive Approach)
+- Word2Vec Word Embedding Technique
+- Glove Word Embedding Technique
+- Simple Transformer technique
+- Question Answering System with Fine-Tuned BERT Technique
+
+## Pretrained Model and Dataset Used
+- word2vec
+- glove
+- bert-large-uncased-whole-word-masking-finetuned-squad
+- bert-squad_1.1
+
+
+## Simple Transformer Training Dataset
+- Squad_1.1
+
+## Firebase Usage
+Don't need to update ngrok public url in frontend code just update url in remote config in firebase and fetch remote config url from android side.
