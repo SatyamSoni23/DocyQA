@@ -68,13 +68,13 @@ Don't need to update ngrok public URL in the frontend code just update URL in re
 - Create a new folder "docs" in Google Colab folder in Google Drive
 - Run Flask Server.
 - Copy the ngrok public URL and paste it to Firebase Remote Config Parameter URL and Publish it.
-- Now Setup Android Studio and Firebase to create the APK file.
+- Now Setup Project in Android Studio and Firebase to create the APK file.
 
 ## Screenshots
 <table>
 <tr>
-    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q1.JPG" width=340 height=480 padding = "20"/></td>
-    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q2.JPG" width=340 height=480 padding = "20"/></td>
-    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q3.JPG" width=340 height=480 padding = "20"/></td>
+    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q1.JPG" width=340 height=450 padding = "20"/></td>
+    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q2.JPG" width=340 height=450 padding = "20"/></td>
+    <td><img src="https://raw.githubusercontent.com/SatyamSoni23/DocyQA/master/Screenshots/q3.JPG" width=340 height=450 padding = "20"/></td>
   </tr>
 </table>
